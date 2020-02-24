@@ -1,0 +1,30 @@
+<%- include ('./partials/header') %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>افاق الريادة للتنمية والتدريب</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
+    
+<div class="container">
+    <header class="jumbotron" style="background-color: #EE4F6F;">
+        <div class="container">
+            <h1 style="text-align: center; font-family: 'Lalezar', cursive;">معرض افاق الريادة للتنمية والتدريب</h1>
+            
+        </div>
+    </header>
+    
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+       <% allAfaqs.forEach(function(afaq){ %>
+           <div class="col-md-3 col-sm-6">
+               <div class="thumbnail">
+                  <img src="<%= afaq.image %>">
+               </div>
+           </div>
+       <% }); %>
+   </div>
+</div>
+
+<%- include ('./partials/footer') %>
