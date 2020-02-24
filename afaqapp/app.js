@@ -136,8 +136,8 @@ app.post("/addnewpic", function(req, res){
 
 
 
-app.listen(3000, "localhost", function(){
-   console.log("The AfaqAlreada Server Has Started!");
-});
+// app.listen(3000, "localhost", function(){
+//    console.log("The AfaqAlreada Server Has Started!");
+// });
 
-// app.listen(process.env.PORT, process.env.IP);
+app.listen(process.env.PORT, process.env.IP);
